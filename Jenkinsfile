@@ -11,14 +11,14 @@ pipeline {
         
         stage('Run') {
             steps {
-                echo 'Download source from git'
-                echo 'Downloaded successfull'
+                echo 'Run Docker images'
+                sh 'docker run --rm --name nodeapp -dp 4000:3000 nodeapp'
             }
         }
         
         stage('Done') {
             steps {
-                echo 'Done'
+                echo ' Successfully Done'
             }
         }
     }
