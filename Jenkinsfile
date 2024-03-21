@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo '------------starting--------------------'
+                sh 'docker build -t nodeapp .'
             }
         }
         
