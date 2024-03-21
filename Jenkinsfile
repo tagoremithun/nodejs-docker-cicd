@@ -19,6 +19,7 @@ pipeline {
         stage('Done') {
             steps {
                 echo ' Successfully Done'
+                echo 'This is test'
             }
         }
     }
